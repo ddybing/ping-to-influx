@@ -1,0 +1,4 @@
+requests
+influxdb-client
+schedule
+tcp-latency
