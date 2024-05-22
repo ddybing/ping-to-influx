@@ -17,13 +17,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 2. Build the Docker image:
 
-\```sh
+```sh 
 docker build -t ping_to_influx .
-\```
+```
 
 3. Run the Docker container:
 
-\```sh
+```sh
 docker run -e INFLUXDB_URL=http://localhost:8086 \
            -e INFLUXDB_TOKEN=your_token \
            -e INFLUXDB_ORG=your_org \
@@ -31,7 +31,7 @@ docker run -e INFLUXDB_URL=http://localhost:8086 \
            -e PING_URL=http://example.com \
            -e INTERVAL=60 \
            ping_to_influx
-\```
+```
 
 Replace the placeholder values (`http://localhost:8086`, `your_token`, `your_org`, `your_bucket`, `http://example.com`, `60`) with your actual values.
 
